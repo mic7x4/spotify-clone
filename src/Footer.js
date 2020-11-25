@@ -24,7 +24,7 @@ function Footer() {
             <div className="footer__center">
                 <ShuffleIcon className="footer__green" />
                 <SkipPreviousIcon className="footer__icon" />
-                <PlayCircleFilledIcon  fontSize="large" />
+                <PlayCircleFilledIcon  className="footer__icon" fontSize="large" />
                 <SkipNextIcon className ="footer__icon"/>
                 <RepeatIcon className="footer__green"/>
             </div>
