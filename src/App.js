@@ -23,7 +23,6 @@ function App() {
     const _token = hash.access_token;
 
     if(_token){
-      console.log(user);
       dispatch({
         type:"SET_TOKEN",
         token:_token,
@@ -45,6 +44,14 @@ function App() {
           type:'SET_PLAYLISTS',
           playlists:playlists,
         }); 
+      });
+
+      spotify.getUserPlaylists('50Gs8mS9CbTlOwFPX9EnJF')
+      .then((response) => {
+          dispatch({
+            type:'SET_DISCOVER_WEEKLY',
+            discover_weekly : response,
+          });
       });
     }
   },[]);
