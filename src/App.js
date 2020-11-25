@@ -23,7 +23,7 @@ function App() {
     const _token = hash.access_token;
 
     if(_token){
-
+      console.log(user);
       dispatch({
         type:"SET_TOKEN",
         token:_token,
