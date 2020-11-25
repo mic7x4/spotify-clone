@@ -10,6 +10,11 @@ const scopes =[
     "user-read-playback-state",
     "user-top-read",
     "user-modify-playback-state",
+    "playlist-read-collaborative",
+    "user-library-read",
+    "playlist-read-private",
+    "playlist-modify-public",
+    "user-read-playback-position"
 ];
 export const getTokenFromUrl = ()=>{
     return window.location.hash
